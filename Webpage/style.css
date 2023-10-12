@@ -11,8 +11,30 @@
 /* Body styles */
 
 body {
-    font-family: 'Arial';
+    font-family: 'Poppins';
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-image: url('images/background_index2.jpg');
+    background-position-y: -50px;
+    background-size: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+}
+nav img {
+    width: 65%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 25px;
 }
