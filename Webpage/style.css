@@ -110,7 +110,7 @@ nav img {
 }
 
 .content-box {
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.322);
     border-radius: 15px;
     color: white;
     width: 35%;
@@ -128,6 +128,7 @@ nav img {
 }
 
 .content-box p {
+    margin-top: 10px;
     font-size: 17px;
 }
 
@@ -142,7 +143,7 @@ nav img {
     padding: 0px 12px 0px 12px;
     height: 35px;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #lm-btn {
