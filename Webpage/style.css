@@ -1,5 +1,5 @@
-/* ! All images used are copyright free from pexels.com & freepik.com */
-
+/* ! Images used are copyright free from pexels.com & freepik.com */
+/* Some of them are directly taken from the current Visiple website to keep some of the content from the main website */
 /* Resets all CSS properties */
 
 * {
@@ -72,12 +72,24 @@ body {
     background-image: url(images/login-background.jpg);
 }
 
-#contact-body{
+#contact-body {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.whyus-body h1,
+.whyus-body h2,
+.whyus-body h3 {
+    font-weight: 500;
+}
+
+.whyus-body hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 /* navbar */
@@ -108,18 +120,19 @@ nav img {
 }
 
 .nav-ulist a {
-    color: white;
+    color: #fff;
     font-size: 17px;
     margin-left: 22.5px;
     transition: all .55s ease;
     position: relative;
+    padding-bottom: 2.15px;
 }
 
 .nav-ulist a:before {
     content: "";
     position: absolute;
     width: 0;
-    height: 2.5px;
+    height: 0.95px;
     background-color: rgb(255, 255, 255);
     bottom: 0px;
     left: 0;
@@ -135,7 +148,7 @@ nav img {
 }
 
 .nav-ulist ion-icon {
-    color: white;
+    color: #fff;
     margin-left: 20px;
     margin-bottom: 5px;
 }
@@ -145,11 +158,29 @@ nav img {
 }
 
 #menu-icon {
-    color: white;
+    color: #fff;
     font-size: 34.5px;
     z-index: 10001;
     cursor: pointer;
     display: none;
+}
+
+/* Nav recolor for contact page */
+
+.contact-nav .nav-ulist a {
+    color: #000;
+}
+
+.contact-nav .nav-ulist a:before {
+    background-color: #000;
+}
+
+.contact-nav .nav-ulist a:hover:before {
+    width: 100%;
+}
+
+.nav-ulist a:hover:before {
+    width: 100%;
 }
 
 /* index page */
@@ -164,7 +195,7 @@ nav img {
 }
 
 .main-head h1 {
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     font-size: 45px;
     position: relative;
@@ -178,7 +209,7 @@ nav img {
 }
 
 .main-head h4 {
-    color: white;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -287,7 +318,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #fff;
     margin-top: 1%;
 }
 
@@ -304,14 +335,13 @@ footer {
 .about-container h2 {
     font-weight: normal;
     font-size: 17px;
-    margin-top: .5%;
 }
 
 .about-info-goals {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 .about-info-goals h3 {
@@ -333,7 +363,7 @@ footer {
 .about-socials a {
     font-size: 20px;
     padding: 5px 10px 5px 10px;
-    color: white;
+    color: #fff;
     border-radius: 50px;
     background-color: #333333af;
     transition: all .4s ease;
@@ -414,7 +444,7 @@ footer {
 /* footer */
 
 .footer {
-    color: white;
+    color: #fff;
     background-color: #3C3D41;
     height: 256px;
 }
@@ -449,7 +479,7 @@ footer {
 }
 
 .footer-info .row a:hover {
-    color: white;
+    color: #fff;
 }
 
 .footer-info .row ul {
@@ -471,7 +501,7 @@ footer {
 }
 
 .footer .row1 a {
-    color: white;
+    color: #fff;
     text-decoration: underline;
 }
 
@@ -494,7 +524,7 @@ footer {
     border: none;
     border-radius: 20px;
     background-color: #E60062;
-    color: white;
+    color: #fff;
     font-weight: 600;
     font-size: 16px;
     margin-top: 5%;
@@ -514,7 +544,7 @@ footer {
 }
 
 .footer-icons i {
-    color: white;
+    color: #fff;
     font-size: 30px;
     transition: all .3s ease-in-out;
 }
@@ -626,12 +656,12 @@ footer {
 }
 
 .pricing-trial-parent h1 {
-    color: white;
+    color: #fff;
 }
 
 .pricing-trial-parent p {
     margin-top: 5px;
-    color: white;
+    color: #fff;
 }
 
 .pricing-trial-parent a {
@@ -872,7 +902,7 @@ a.google span {
 }
 
 .contact-header-txt h1 {
-    font-size: 40px;
+    font-size: 35px;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -887,9 +917,9 @@ a.google span {
 
 .contact-header-txt p {
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     color: #777777;
-    width: 56%;
+    width: 70%;
     text-align: center;
     margin-top: 5.5%;
 }
@@ -906,10 +936,11 @@ a.google span {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    width: 60%;
+    width: 65%;
+    margin-top: 2%;
 }
 
-.icon-parent{
+.icon-parent {
     width: 240px;
 }
 
@@ -919,18 +950,19 @@ a.google span {
 }
 
 .contact-info-icons p {
-    color: #777777;
+    font-size: 13px;
+    color: #5e5e5e;
     margin-top: 6%;
 }
 
 .contact-form {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
 }
 
-.form-left{
+.form-left {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -938,12 +970,13 @@ a.google span {
 }
 
 .form-left input {
-    border: 1px #bbbbbb solid;
-	padding: 14px;
-	font-size: 13px;
-	height: auto;
+    border: 1px #7c7c7c solid;
+    padding: 14px;
+    font-size: 13px;
+    height: auto;
     width: 95%;
     border-width: 1px;
+    box-sizing: border-box;
 }
 
 .form-left input:focus {
@@ -953,23 +986,195 @@ a.google span {
 
 .form-right {
     width: 50%;
+
 }
 
 .form-right textarea {
-   height: 100%;
-   width: 100%;
-   border-radius: 0;
-   -webkit-box-shadow: none;
-   box-shadow: none;
-   -webkit-transition: none;
-   -o-transition: none;
-   transition: none;
-   border: 1px #bbbbbb solid;
-   padding: 14px;
-   font-size: 13px;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    border: 1px #7c7c7c solid;
+    padding: 14px;
+    font-size: 13px;
+    box-sizing: border-box;
+
 }
 
 .form-right textarea:focus {
     outline: none;
     border: 1.5px #000000 solid;
+}
+
+
+/* Why Us page */
+
+.whyus-container {
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/about_img.jpg);
+    background-position-y: -50px;
+    background-attachment: fixed;
+}
+
+.whyus-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.275);
+}
+
+.whyus-info {
+    position: relative;
+    height: 89.8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-top: 3%;
+}
+
+.whyus-info h1 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.whyus-info h2 {
+    margin-top: 1%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.whyus-info-main {
+    text-align: center;
+}
+
+.whyus-info-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.whyus-info-txt h3 {
+    text-align: center;
+    width: 50%;
+    margin-top: 3%;
+    font-weight: 400;
+}
+
+.whyus-quote-container {
+    height: 280px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/quote-background.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quote-container i {
+    margin-top: 2%;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    color: #000;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.quote-container p {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2%;
+}
+
+.quote-container h4 {
+    margin-top: 2%;
+    font-weight: 500;
+}
+
+.visiple-services-parent {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-image: url(images/services-background2.jpg);
+    background-size: cover;
+}
+
+.visiple-services-parent img {
+    position: absolute;
+    top: 6%;
+    right: 14%;
+    width: 40%;
+}
+
+.whyus-info-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+}
+
+.info-rows-parent {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.info-row {
+    width: 30%;
+    height: 30rem;
+    border: red solid;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.info-row p {
+    width: 70%;
+}
+
+.row-info-img-wrapper {
+    border: red solid;
+    width: 100%;
+    height: 70%;
+}
+
+.info-row-img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-row-img1 {
+    background-image: url(images/TechLife-Media.png);
+}
+
+.info-row-img2 {
+    background-image: url(images/TechLife-Communication.png);
+}
+
+.info-row-img3 {
+    background-image: url(images/TechLife-RemoteLife.png);
 }
