@@ -72,6 +72,14 @@ body {
     background-image: url(images/login-background.jpg);
 }
 
+#contact-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* navbar */
 
 nav {
@@ -841,11 +849,11 @@ a.google span {
 
 .contact-section {
     width: 100%;
-    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 2%;
 }
 
 .contact-section-parent {
@@ -853,6 +861,7 @@ a.google span {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .contact-header-txt {
@@ -894,10 +903,14 @@ a.google span {
 }
 
 .contact-info-icons {
+    text-align: center;
     display: flex;
-    justify-content: space-between;
-    width: 90%;
-    border: red solid;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.icon-parent{
+    width: 240px;
 }
 
 .contact-info-icons ion-icon {
@@ -911,7 +924,7 @@ a.google span {
 }
 
 .contact-form {
-    width: 90%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
@@ -925,7 +938,7 @@ a.google span {
 }
 
 .form-left input {
-	border-color: #bbbbbb;
+    border: 1px #bbbbbb solid;
 	padding: 14px;
 	font-size: 13px;
 	height: auto;
@@ -934,14 +947,12 @@ a.google span {
 }
 
 .form-left input:focus {
-    border-radius: 0;
-    border-color: #ff0a0a;
+    outline: none;
+    border: 1.5px #000 solid;
 }
 
 .form-right {
     width: 50%;
-    display: flex;
-    align-items: flex-start;
 }
 
 .form-right textarea {
@@ -953,7 +964,12 @@ a.google span {
    -webkit-transition: none;
    -o-transition: none;
    transition: none;
-   border-color: #8a8587;
+   border: 1px #bbbbbb solid;
    padding: 14px;
    font-size: 13px;
+}
+
+.form-right textarea:focus {
+    outline: none;
+    border: 1.5px #000000 solid;
 }
