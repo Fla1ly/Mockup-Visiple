@@ -22,12 +22,11 @@ eyeIcon.addEventListener("click", () => {
 
 links.forEach(link => {
 link.addEventListener("click", e => {
- e.preventDefault(); //preventing form submit
+ e.preventDefault();
  forms.classList.toggle("show-signup");
 })
 })
 
 document.getElementById('btn-userpage').addEventListener('click', () => {
     window.location.href = 'user.html'
-    console.log("e");
 })

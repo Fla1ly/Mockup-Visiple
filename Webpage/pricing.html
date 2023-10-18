@@ -27,7 +27,7 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="whyus.html">Why Visiple</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <ion-icon name="person-circle-outline" size="large"></ion-icon>
+                <ion-icon name="person-circle-outline" onlick="redirect()" id="btn-userpage" size="large"></ion-icon>
             </ul>
             <div class="bx bx-menu" id="menu-icon"></div>
         </nav>
@@ -74,7 +74,7 @@
                     </ul>
                     <div class="button-div-test">
                         <a
-                            href="https://app.meet.visiple.com/sign-up?product=visiple_standard"><button>BuyNow</button></a>
+                            href="https://app.meet.visiple.com/sign-up?product=visiple_standard"><button>Buy Now</button></a>
                     </div>
                 </div>
                 <div class="price-col" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out"
@@ -97,69 +97,32 @@
     </div>
 
     <div class="pricing-trial-parent">
-        <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">Experience a
-            new way of video conferencing</h1>
-        <p data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">Try our 14
-            days free trial today</p>
-        <a href="https://app.meet.visiple.com/sign-up?product=visiple_standard"><button data-aos="fade-in"
-                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">Try Now</button></a>
-    </div>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="images/Visiple_logo_1.png" alt="Visiple_Logo">
-            </div>
-            <div class="footer-info">
-                <div class="row-main row1">
-                    <h3>Let's stay in touch with our newsletter!</h3>
-                    <p>mettings@visiple.com</p>
-                    <a href="/">+1 860 333 9167</a>
-                </div>
-                <div class="row row2">
-                    <h5>Useful Links</h5>
-                    <ul>
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="/">
-                            <li>Sign up</li>
-                        </a>
-                        <a href="/">
-                            <li>Services</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="row row3">
-                    <h5>Support</h5>
-                    <ul>
-                        <a href="pdf/Visiple - Terms & Conditions.pdf">
-                            <li>Terms and Conditions</li>
-                        </a>
-                        <a href="/">
-                            <li>Support</li>
-                        </a>
-                        <a href="/">
-                            <li>Contact us</li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-links">
-                <div class="footer-icons">
-                    <a href="https://twitter.com/Visiple_"><i class="ri-twitter-fill"></i></a>
-                    <a href="https://www.facebook.com/visiple/"><i class="ri-facebook-fill"></i></a>
-                    <a href="https://www.instagram.com/visiple_/"><i class="ri-instagram-line"></i></a>
-                    <a href="https://www.linkedin.com/company/visiple"><i class="ri-linkedin-fill"></i></a>
-                </div>
-                <br>
-                <a href="/"><button>Contact us</button></a>
-            </div>
+        <div class="pricing-trial-container">
+            <h1 data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+                Experience a
+                new way of video conferencing</h1>
+            <p data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">Try our 14
+                days free trial today</p>
+            <a href="https://app.meet.visiple.com/sign-up?product=visiple_free_trial"><button data-aos="fade-in"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">Try Now</button></a>
         </div>
-    </footer>
-    <div class="footer-copyright">
-        <p>© 2023 Copyright Text</p>
+        <footer>
+            <ul class="footer-ulist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="whyus.html">Services</a></li>
+                <li><a href="pdf/Visiple - Terms & Conditions.pdf">Terms & Conditions</a></li>
+                <li><a href="contact.html">Support</a></li>
+            </ul>
+            <div class="footer-icons">
+                <a href="https://twitter.com/Visiple_"><i class="ri-twitter-fill"></i></a>
+                <a href="https://www.facebook.com/visiple/"><i class="ri-facebook-fill"></i></a>
+                <a href="https://www.instagram.com/visiple_/"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.linkedin.com/company/visiple"><i class="ri-linkedin-fill"></i></a>
+            </div>
+        </footer>
     </div>
-
+    <script src="./script.js"></script>
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
