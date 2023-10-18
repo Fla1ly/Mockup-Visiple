@@ -1,6 +1,7 @@
 const forms = document.querySelector(".forms"),
 pwShowHide = document.querySelectorAll(".eye-icon"),
 links = document.querySelectorAll(".link");
+const userBtn = document.querySelectorAll("#btn-userpage")
 
 pwShowHide.forEach(eyeIcon => {
 eyeIcon.addEventListener("click", () => {
@@ -24,4 +25,9 @@ link.addEventListener("click", e => {
  e.preventDefault(); //preventing form submit
  forms.classList.toggle("show-signup");
 })
+})
+
+document.getElementById('btn-userpage').addEventListener('click', () => {
+    window.location.href = 'user.html'
+    console.log("e");
 })

@@ -59,10 +59,6 @@ body {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.body-pricing {
-    background-color: #5c539d;
-}
-
 .signup-body {
     position: relative;
     height: 100vh;
@@ -86,12 +82,12 @@ body {
     font-weight: 500;
 }
 
-.whyus-body hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+.body-user {
+    background-image: url(images/user-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
-
 /* navbar */
 
 nav {
@@ -564,10 +560,17 @@ footer {
 
 /* pricing page */
 
-.pricing-container {
+.pricing-banner-main {
     width: 100%;
-    min-height: 100vh;
-    background: #5c539d;
+    min-height: 110vh;
+    position: relative;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-position-y: -200px;
+    background-repeat: no-repeat;
+    background-image: url(images/pricing-banner2.jpg);
+
 }
 
 .pricing-container h1,
@@ -595,6 +598,12 @@ footer {
     border-radius: 10px;
     color: #ffffff;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-col .button-div-test {
+    margin-top: auto;
 }
 
 .price-col p {
@@ -637,7 +646,7 @@ footer {
     font-size: 15px;
     border: 1px solid #e33058;
     border-radius: 6px;
-    margin-top: auto;
+    
     cursor: pointer;
     transition: background 0.5s;
 }
@@ -652,7 +661,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 300px;
-    background-color: #646464;
+    background-color: #1f283b;
 }
 
 .pricing-trial-parent h1 {
@@ -1021,7 +1030,7 @@ a.google span {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/about_img.jpg);
+    background-image: url(images/whyus-banner.jpg);
     background-position-y: -50px;
     background-attachment: fixed;
 }
@@ -1065,7 +1074,9 @@ a.google span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 9%;
+    line-height: 35px;
+    width: 90%;
 }
 
 .whyus-info-txt h3 {
@@ -1122,16 +1133,25 @@ a.google span {
 
 .visiple-services-parent img {
     position: absolute;
-    top: 6%;
+    top: 15%;
     right: 14%;
     width: 40%;
+}
+
+.visiple-services-parent h2 {
+    position: absolute;
+    top: 6%;
+    right: 8.25%;
+    width: 40%;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .whyus-info-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: 700px;
     width: 100%;
 }
 
@@ -1146,30 +1166,92 @@ a.google span {
 .info-row {
     width: 30%;
     height: 30rem;
-    border: red solid;
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
+.info-row h2 {
+    border: red solid;
+    margin-top: 5%;
+    font-size: 35px;
+}
+
 .info-row p {
-    width: 70%;
+    text-align: center;
+    width: 100%;
+    margin-top: 2%;
 }
 
 .info-row-img {
-    width: 50%;
-    height: 51%;
-    border: red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80%;
 }
 
 .info-row-img1 {
     background-image: url(images/TechLife-Media.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 .info-row-img2 {
     background-image: url(images/TechLife-Communication.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
 }
 
 .info-row-img3 {
     background-image: url(images/TechLife-RemoteLife.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
 }
+
+.whyus-div4-parent {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2546;
+}
+
+.div4-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.div4-container h2 {
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+}
+
+.div4-container button {
+    width: 250px;
+    padding: 20px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #e33058;
+    border-radius: 6px;
+    margin-top: auto;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.div4-container button:hover {
+    background: #e33058;
+}
+
+
+/* User page */
+
