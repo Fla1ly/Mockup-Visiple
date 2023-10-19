@@ -14,6 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* custom scroll bar */
 
 ::-webkit-scrollbar {
@@ -30,6 +31,7 @@ html {
     background: rgba(255, 255, 255, 0.815);
     border-radius: 10px;
 }
+
 
 /* Body styles */
 
@@ -86,8 +88,10 @@ body {
     background-image: url(images/user-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
+
+
 /* navbar */
 
 nav {
@@ -199,6 +203,7 @@ footer i {
 footer i:hover {
     color: #fff;
 }
+
 .footer-ulist {
     display: flex;
     list-style: none;
@@ -315,6 +320,7 @@ footer i:hover {
     color: #000000;
     border-color: #ffffff;
 }
+
 
 /* about page */
 
@@ -468,6 +474,7 @@ footer i:hover {
     width: 95%;
 }
 
+
 /* pricing page */
 
 .pricing-banner-main {
@@ -556,7 +563,6 @@ footer i:hover {
     font-size: 15px;
     border: 1px solid #e33058;
     border-radius: 6px;
-    
     cursor: pointer;
     transition: background 0.5s;
 }
@@ -700,14 +706,16 @@ form {
 }
 
 .field button {
-    color: #fff;
-    background-color: #e33058;
+    color: #000;
+    background-color: transparent;
     transition: all 0.3s ease;
     cursor: pointer;
+    border: 1px #e33058 solid;
 }
 
 .field button:hover {
-    background-color: #e33057b0;
+    background-color: #e33058;
+    color: #fff;
 }
 
 .form-link {
@@ -803,6 +811,7 @@ a.google span {
     }
 
 }
+
 
 /* Contact page */
 
@@ -973,6 +982,7 @@ a.google span {
     color: #fff;
     border-color: #000000;
 }
+
 
 /* Why Us page */
 
@@ -1236,3 +1246,187 @@ a.google span {
 .user-main-txt h2 {
     color: #fff;
 }
+
+
+/* media */
+
+@media (max-width: 768px) {
+    .index-body {
+        background-size: cover;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Adjust the header font size further if needed */
+    .main-head h1 {
+        font-size: 24px;
+        line-height: 2rem;
+    }
+
+    .main-head h4 {
+        font-size: 18px;
+    }
+
+    .index-buttons-parent {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .btn-primary {
+        border-radius: 0;
+        font-size: 10px;
+        padding: 15px 20px;
+        transition: all 0.3s;
+    }
+
+    footer {
+        height: 50px;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer i {
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .footer-ulist a {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .footer-icons {
+        gap: 10px;
+    }
+
+    /* about media */
+
+    .about-body {
+        background-color: #fff;
+    }
+
+    .about-container {
+        background-color: #fff;
+    }
+
+    .about-info h1 {
+        font-size: 24px;
+    }
+
+    .about-info-goals h3 {
+        margin-top: 5%;
+        font-size: 15px;
+    }
+
+    .about-info-goals {
+        width: 50%;
+        text-align: center;
+    }
+
+    .about-socials {
+        margin-bottom: 25px;
+    }
+
+    .about-info-parent img {
+        margin-left: 20%;
+        width: 60%;
+    }
+
+    .about-info-txt {
+        height: 200px;
+    }
+
+    .about-info-txt h1 {
+        font-size: 25px;
+    }
+
+    .about-info-txt p {
+        width: 100%;
+        font-size: 9px;
+        margin-top: 2%;
+        margin-left: 5%;
+        margin-bottom: auto;
+        line-height: 10px;
+    }
+
+    .about-locations-parent {
+        flex-direction: column;
+    }
+
+    .locations-media-div {
+        display: flex;
+        margin-top: 2%;
+    }
+
+    .loc-m-d-r {
+        width: 50%;
+    }
+
+    .about-locations-info h1 {
+        font-size: 30px;
+    }
+
+    .about-locations-info h2 {
+        font-size: 15px;
+        margin-top: 3%;
+    }
+
+    .about-locations-info p {
+        font-size: 10px;
+    }
+
+    .locations-img img {
+        margin-bottom: 20%;
+    }
+
+    .about-footer-background {
+        margin-top: auto;
+        height: 50px;
+    }
+
+
+    /* pricing media */
+
+    .body-pricing {
+        height: 2000px;
+    }
+
+    .pricing-container h1, .pricing-container h2 {
+        font-size: 20px;
+    }
+    .price-col {
+        padding: 5% 10%;
+    }
+
+    .price-col p {
+        font-size: 15px;
+    }
+
+    .price-col h3 {
+        font-size: 20px;
+    }
+
+    .price-col h3 span {
+        font-size: 12px;
+    }
+
+    .price-col ul li {
+        font-size: 13px;
+    }    
+
+    .pricing-trial-container {
+        border: red solid;
+        top: 0;
+    }
+
+    .price-row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
