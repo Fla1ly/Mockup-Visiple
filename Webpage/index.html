@@ -27,13 +27,22 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="whyus.html">Why Visiple</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <ion-icon href="user.html" name="person-circle-outline" onlick="redirect()" id="btn-userpage" size="large"></ion-icon>
+            <ion-icon href="user.html" name="person-circle-outline" onlick="redirect()" id="btn-userpage"
+                size="large"></ion-icon>
         </ul>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="bx bx-menu" id="menu-icon" onlick="test()"></div>
     </nav>
+    <div class="dropdown-menu open">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="whyus.html">Why Visiple</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="user.html">Account</a></li>  
+    </div>
     <!-- index content -->
-    <div class="main-head" data-aos="fade-down" data-aos-duration="1000"
-    data-aos-easing="ease-in-out" data-aos-once="true">
+    <div class="main-head" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out"
+        data-aos-once="true">
         <div class="index-container">
             <div class="index-row">
                 <div class="index-content">
@@ -72,7 +81,7 @@
     <script>
         AOS.init();
     </script>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
