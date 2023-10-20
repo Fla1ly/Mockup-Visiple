@@ -36,5 +36,6 @@ link.addEventListener("click", e => {
 })
 })
 
-
-
+document.getElementById('btn-userpage').addEventListener('click', () => {
+    window.location.href = 'user.html'
+})
