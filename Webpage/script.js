@@ -6,7 +6,8 @@ const toggleBtns = document.querySelectorAll("#menu-icon");
 const dropDownMenu = document.querySelector(".dropdown-menu");
 
 toggleBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function(event) {
+        event.preventDefault();
         dropDownMenu.classList.toggle('open');
     });
 });
@@ -35,6 +36,5 @@ link.addEventListener("click", e => {
 })
 })
 
-document.getElementById('btn-userpage').addEventListener('click', () => {
-    window.location.href = 'user.html'
-})
+
+

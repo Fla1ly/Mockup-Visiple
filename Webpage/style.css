@@ -1,5 +1,6 @@
 /* ! Images used are copyright free from pexels.com & freepik.com */
 /* Some of them are directly taken from the current Visiple website to keep some of the content from the main website */
+
 /* Resets all CSS properties */
 
 * {
@@ -183,9 +184,26 @@ nav img {
     width: 100%;
 }
 
+/* Dropdown menu recolor */
+
+.dropdown-contact {
+    box-shadow: 14px 15px 8px -11px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 14px 15px 8px -11px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 14px 15px 8px -11px rgba(0, 0, 0, 0.45);
+}
+
+.dropdown-contact li {
+    color: #000;
+}
+
+.icon-menu-contact {
+    color: #000;
+}
+
 /* Dropdown menu */
 
 .dropdown-menu {
+    z-index: 1000;
     display: none;
     position: absolute;
     right: 2rem;
@@ -571,6 +589,9 @@ footer i:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
+    box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, 0.45);
 }
 
 .price-col .button-div-test {
@@ -875,6 +896,79 @@ a.google span {
     }
 
 }
+
+
+/* Blog page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Contact page */
@@ -1361,7 +1455,7 @@ a.google span {
 }
 
 
-/* responsive meny navbar */ 
+/* responsive meny navbar */
 
 @media (max-width: 992px) {
     .nav-ulist {
@@ -1379,6 +1473,9 @@ a.google span {
 
 
 @media (max-width: 880px) {
+    .body-pricing {
+        background-color: #1F283B;
+    }
 
     .pricing-banner-main {
         min-height: auto;
@@ -1388,6 +1485,12 @@ a.google span {
 
     .pricing-trial-parent {
         margin-top: auto;
+    }
+
+    .price-col {
+        box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, 0.45);
+        -webkit-box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: 10px 10px 8px -1px rgba(0, 0, 0, 0.45);
     }
 }
 
@@ -1654,6 +1757,7 @@ a.google span {
     }
 
     .visiple-services-parent h2 {
+        text-align: center;
         background-color: #0000001c;
         border-radius: 5px;
         padding: 2%;
@@ -1752,5 +1856,145 @@ a.google span {
     .dropdown-menu {
         left: 2rem;
         width: unset;
+    }
+}
+
+
+/* media for mobile phones */
+
+@media (max-width: 400px) {
+
+    .index-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .index-row {
+        margin-bottom: 50%;
+    }
+    .main-head h4 {
+        font-size: 15px;
+    }
+
+    .main-head h1 {
+        font-size: 20px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .footer-ulist a {
+        font-size: 10px;
+    }
+
+    footer i {
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .footer-ulist a {
+        margin-left: 2px;
+        font-size: 10px;
+    }
+
+    .footer-icons {
+        margin-left: 0;
+        gap: 0;
+    }
+
+
+    /* About us media */
+
+    .about-info-goals h3 {
+        margin-top: 15%;
+    }
+
+    .about-info-parent {
+        padding: 1%;
+    }
+
+    .about-info-parent img {
+        width: 70%;
+        margin-left: 30%;
+    }
+
+    .about-locations-parent {
+        height: 50%;
+    }
+
+    .locations-img img {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10%;
+    }
+
+    .about-info-txt h1 {
+        font-size: 17px;
+    }
+
+    .about-info-txt p {
+        font-size: 8px;
+        width: 200px;
+    }
+
+    .about-locations-info h1 {
+        font-size: 18px;
+        margin-top: 5%;
+    }
+
+    .about-locations-info h2 {
+        font-size: 13px;
+    }
+
+    .about-locations-info p {
+        font-size: 9px;
+    }
+
+    
+    /* Why us page media */
+
+    .services-child-media {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .visiple-services-parent img {
+        width: 70%;
+    }
+
+    .visiple-services-parent h2 {
+        text-align: center;
+        background-color: #0000001c;
+        width: 80%;
+        border-radius: 5px;
+        padding: 2%;
+        color: #fff;
+        font-size: 20px;
+        position: static;
+    }
+
+    .info-row-img1 {
+        height: 100px;
+        background-size: 100%;
+    }
+
+    .info-row-img2 {
+        height: 100px;
+        background-size: 100%;
+    }
+
+    .info-row-img3 {
+        height: 100px;
+        background-size: 100%;
+    }
+
+    .div4-container h2 {
+        text-align: center;
+        width: 100%;
+        font-size: 15px;
     }
 }
